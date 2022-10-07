@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(fonts/quicksand/Quicksand_Book.otf);
+}
+
+html{
+    font-family: Quicksand ;
+    background-color: #3d3d3d;
+}
+
+body{
+    background-color: white;
+    width: 1024px;
+    height:1440px;
+    margin: auto;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+
+
+.traitgauche
+    {
+    border-left: 1px solid grey;
+    padding-left: 5px;
+    margin-left: 50px;
+    }
+
+.up{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cv{
+    margin: auto 30px;
+    }
+
+.cvimg{
+    height: 60px;
+}
+
+.middle{
+    display: flex;
+}
+
+.left{
+    max-width: 300px;
+    margin: 0 auto;
+}
+.right{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1{
+    font-weight: ;
+    font-size: 60px;
+    margin:  auto 30px;
+}
+
+
+p{
+    color: grey;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+
+.contact ul li{
+    padding-bottom: 10px;
+    display: flex;
+
+}
+.contact ul li a{
+    padding-left: 10px;
+    margin: auto;
+    margin-left: 0;
+}
+
+a{
+    color: grey;
+}
