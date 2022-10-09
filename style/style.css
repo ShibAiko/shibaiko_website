@@ -1,10 +1,10 @@
 @font-face {
     font-family: Dogica;
-    src: url(fonts/dogica/OTF/dogica.otf);
+    src: url(../fonts/dogica/OTF/dogica.otf);
 }
 @font-face {
     font-family: Quicksand;
-    src: url(fonts/quicksand/Quicksand_Book.otf);
+    src: url(../fonts/quicksand/Quicksand_Book.otf);
 }
 
 html{
@@ -24,81 +24,6 @@ header{
     margin-top: 0px;
 }
 
-.main{
-    padding-top: 2em;
-    display:flex;
-}
-
-.paragraph{
-    position: relative;
-    width: 100%;
-    height:150px;
-    font-family:  Quicksand;
-    font-size: 1.3em;
-}
-
-    .paragraph_b{
-        position: absolute;
-        z-index: 1;
-        transition: 1s;
-        opacity:0;
-    }
-
-    .info{
-        margin: 2em;
-        text-align: justify;
-        line-height: 1.5em;
-    }
-
-    .paragraph_a{
-        position: absolute;
-        width:100%;
-        height: 100%;
-        top: 50%;
-        border-radius: 10px;
-        background: #3d3d3d;
-        justify-content: center;
-        /*box-shadow: 7px 7px 14px #333333, -7px -7px 14px #474747;*/
-        
-    }
-
-    .paragraph:hover .paragraph{
-        opacity: 1;
-        transition:2s;
-    }
-    .paragraph:hover .paragraph_b{
-        opacity: 1;
-        transition:1s;
-        border-radius: 10px;
-        background: #3d3d3d;
-        box-shadow: inset 7px 7px 14px #333333, inset -7px -7px 14px #474747;
-    }
-    .paragraph:hover .paragraph_a{
-        opacity: 0;
-        transition: 2s;
-    }
-    .paragraph:hover .paragraph_a h3{
-        opacity: 0;
-        transition: 0.5s;
-    }
-
-.paragraph img{
-    max-width: 1.5em;
-    transform: translateY(0.3em);
-    padding-left: 0.1em;
-    padding-right: 0.1em;
-}
-
-.language{
-    display: flex;
-    align-items: center;
-    height:25px;
-}
-
-.language img{
-    padding-inline: 0.5em;
-}
-
 h1{
     font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
@@ -107,13 +32,58 @@ h1{
     letter-spacing:0.1em;
 }
 
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 1em;
+    font-weight:lighter;
+    letter-spacing:0.1em;
+    text-align: center;
+}
+
+hr{
+    background-color: #e69c55;
+    width: 50%;
+}
+
+/*__________________________________________________________________*/
+
+.language{
+    display: flex;
+    align-items: center;
+    height:25px;
+}
+.language img{
+    padding-inline: 0.5em;
+}
+
+
 .presentation{
     padding-top: 2em;
     display: flex;
+    justify-content: space-around;
     height:400px;
-
 }
 
+.presentation h2{
+    font-size: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.presentation img{
+    margin: auto;
+    height:400px;
+    width:400px;
+}
+
+.name{
+    font-family: Dogica;
+    font-size: 25px;
+    color:#e69c55;
+    letter-spacing: 1px;
+}
 .left_side{
 
     margin:auto;
@@ -139,11 +109,11 @@ h1{
     width : 24px;
     height : 24px;
     display : block; /*Très important, sinon les dimensions ne sont pas prises en compte*/
-    background : url("img/cv.png") no-repeat;
+    background : url("../icn/cv.png") no-repeat;
 }
 
 .cv:hover{
-    background-image : url("img/cvc.png");
+    background-image : url("../icn/cvc.png");
 }
 
 .whatsapp
@@ -151,11 +121,11 @@ h1{
     width : 24px;
     height : 24px;
     display : block; /*Très important, sinon les dimensions ne sont pas prises en compte*/
-    background : url("img/whatsapp.png") no-repeat;
+    background : url("../icn/whatsapp.png") no-repeat;
 }
 .whatsapp:hover
 {
-    background-image : url("img/whatsappc.png");
+    background-image : url("../icn/whatsappc.png");
 }
 
 .mail
@@ -163,11 +133,11 @@ h1{
     width : 24px;
     height : 24px;
     display : block; /*Très important, sinon les dimensions ne sont pas prises en compte*/
-    background : url("img/email.png") no-repeat;
+    background : url("../icn/email.png") no-repeat;
 }
 .mail:hover
 {
-    background-image : url("img/emailc.png");
+    background-image : url("../icn/emailc.png");
 }
 
 .linkedin
@@ -175,37 +145,59 @@ h1{
     width : 24px;
     height : 24px;
     display : block; /*Très important, sinon les dimensions ne sont pas prises en compte*/
-    background : url("img/linkedin.png") no-repeat;
+    background : url("../icn/linkedin.png") no-repeat;
 }
 .linkedin:hover
 {
-    background-image : url("img/linkedinc.png");
+    background-image : url("../icn/linkedinc.png");
 }
 
-    .presentation h2{
-        font-size: 2em;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: lighter;
-    letter-spacing: 3px;
-    }
+/*__________________________________________________________________*/
 
-    .name{
-        font-family: Dogica;
-        font-size: 25px;
-        color:#e69c55;
-        letter-spacing: 1px;
-    }
+.main{
+    display:flex;
+    justify-content: space-around;
+    margin: 2em;
+    text-align: justify;
+    line-height: 1.5em;
+    border-radius: 20px;
+    background: #3d3d3d;
+    box-shadow:  12px 12px 25px #343434,
+                 -12px -12px 25px #464646;
+}
+.main img{
+    max-width: 1.5em;
+    transform: translateY(0.3em);
+    padding-left: 0.1em;
+    padding-right: 0.2em;
+}
 
-    .presentation img{
-        margin: auto;
-        height:400px;
-        width:400px;
-    }
+hr{
+    background-color: #e69c55;
+    width: 50%;
+    border: none;
+    height: 1px;
+}
 
-h3{
-    text-align: center;
-    font-variant: small-caps;
-    font-weight: lighter;
+.box_a{
+    width: 100%;
+   padding: 2em;
+    font-family:  Quicksand;
+
+
+}
+
+.box_b{
+    width: 100%;
+    padding: 2em;
+    font-family: Quicksand;
+
+}
+
+.box_c{
+    width: 100%; 
+    padding: 2em;
+    font-family:  Quicksand;
 
 }
 
