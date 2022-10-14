@@ -2,21 +2,22 @@
     font-family: Dogica;
     src: url(../fonts/dogica/OTF/dogica.otf);
 }
+
 @font-face {
     font-family: Quicksand;
     src: url(../fonts/quicksand/Quicksand_Book.otf);
 }
 
-html{
+html {
     background-color: #3d3d3d;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    color:whitesmoke;
-    width:auto;
-    max-width:1280px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    width: auto;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
-header{
+header {
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -24,149 +25,153 @@ header{
     margin-top: 0px;
 }
 
-h1{
+h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
     font-size: 1em;
-    font-weight:lighter;
-    letter-spacing:0.1em;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
 }
 
-h3{
+h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
     font-size: 1em;
-    font-weight:lighter;
-    letter-spacing:0.1em;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
     text-align: center;
 }
 
-hr{
+hr {
     background-color: #e69c55;
     width: 50%;
 }
 
 /*__________________________________________________________________*/
 
-.language{
+.language {
     display: flex;
     align-items: center;
-    height:25px;
+    height: 25px;
 }
-.language img{
+
+.language img {
     padding-inline: 0.5em;
 }
 
 
-.presentation{
+.presentation {
     padding-top: 2em;
     display: flex;
     justify-content: space-around;
-    height:400px;
+    height: 400px;
 }
 
-.presentation h2{
+.presentation h2 {
     font-size: 2em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
     letter-spacing: 3px;
 }
 
-.presentation img{
+.presentation img {
     margin: auto;
-    height:400px;
-    width:400px;
+    height: 400px;
+    width: 400px;
 }
 
-.name{
+.name {
     font-family: Dogica;
     font-size: 25px;
-    color:#e69c55;
+    color: #e69c55;
     letter-spacing: 1px;
 }
-.left_side{
 
-    margin:auto;
-    width:50%;
+.left_side {
+
+    margin: auto;
+    width: 50%;
 }
 
-.left_side ul{
-    list-style:none;
-    display:flex;
-    padding:0;
+.left_side ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
 }
 
-.left_side ul li{
+.left_side ul li {
     padding-right: 1em;
 }
 
-.shib{
+.shib {
     width: 50%;
     margin: auto;
 }
 
-.cv{
-    width : 24px;
-    height : 24px;
-    display : block; /*Très important, sinon les dimensions ne sont pas prises en compte*/
-    background : url("../icn/cv.png") no-repeat;
+.cv {
+    width: 24px;
+    height: 24px;
+    display: block;
+    /*Très important, sinon les dimensions ne sont pas prises en compte*/
+    background: url("../icn/cv.png") no-repeat;
 }
 
-.cv:hover{
-    background-image : url("../icn/cvc.png");
+.cv:hover {
+    background-image: url("../icn/cvc.png");
 }
 
-.whatsapp
-{
-    width : 24px;
-    height : 24px;
-    display : block; /*Très important, sinon les dimensions ne sont pas prises en compte*/
-    background : url("../icn/whatsapp.png") no-repeat;
-}
-.whatsapp:hover
-{
-    background-image : url("../icn/whatsappc.png");
+.whatsapp {
+    width: 24px;
+    height: 24px;
+    display: block;
+    /*Très important, sinon les dimensions ne sont pas prises en compte*/
+    background: url("../icn/whatsapp.png") no-repeat;
 }
 
-.mail
-{
-    width : 24px;
-    height : 24px;
-    display : block; /*Très important, sinon les dimensions ne sont pas prises en compte*/
-    background : url("../icn/email.png") no-repeat;
-}
-.mail:hover
-{
-    background-image : url("../icn/emailc.png");
+.whatsapp:hover {
+    background-image: url("../icn/whatsappc.png");
 }
 
-.linkedin
-{
-    width : 24px;
-    height : 24px;
-    display : block; /*Très important, sinon les dimensions ne sont pas prises en compte*/
-    background : url("../icn/linkedin.png") no-repeat;
+.mail {
+    width: 24px;
+    height: 24px;
+    display: block;
+    /*Très important, sinon les dimensions ne sont pas prises en compte*/
+    background: url("../icn/email.png") no-repeat;
 }
-.linkedin:hover
-{
-    background-image : url("../icn/linkedinc.png");
+
+.mail:hover {
+    background-image: url("../icn/emailc.png");
+}
+
+.linkedin {
+    width: 24px;
+    height: 24px;
+    display: block;
+    /*Très important, sinon les dimensions ne sont pas prises en compte*/
+    background: url("../icn/linkedin.png") no-repeat;
+}
+
+.linkedin:hover {
+    background-image: url("../icn/linkedinc.png");
 }
 
 /*__________________________________________________________________*/
 
-.main{
-    display:flex;
+.main {
+    display: flex;
     justify-content: space-around;
     margin: 2em;
     text-align: justify;
     line-height: 1.5em;
     border-radius: 10px;
     background: #3d3d3d;
-    box-shadow:  inset 7px 7px 14px #343434,
-                 inset -7px -7px 14px #464646;
+    box-shadow: inset 7px 7px 14px #343434,
+        inset -7px -7px 14px #464646;
 
 }
-.main img{
+
+.main img {
     /*max-width: 1.5em;*/
     transform: translateY(0.3em);
     padding-left: 0.1em;
@@ -181,44 +186,40 @@ hr{
     width: 48px;
 }
 
-hr{
+hr {
     background-color: #e69c55;
     width: 10em;
     border: none;
     height: 1px;
 }
 
-.boxAboutMe{
+.boxAboutMe {
     padding: 2em;
-    font-family:  Quicksand;
+    font-family: Quicksand;
     margin: 2em;
 }
 
-.boxSetup{
+.boxSetup {
     padding: 2em;
-    font-family:  Quicksand;
+    font-family: Quicksand;
     border-radius: 10px;
     background: #3d3d3d;
-    box-shadow:  7px 7px 14px #343434,
-                 -7px -7px 14px #464646;
-                 margin: 2em;
+    box-shadow: 7px 7px 14px #343434,
+        -7px -7px 14px #464646;
+    margin: 2em;
     flex: 33%;
 }
 
-.boxWhatIUse{
+.boxWhatIUse {
     padding: 2em;
-    font-family:  Quicksand;
+    font-family: Quicksand;
     margin: 2em;
     text-align: center;
 }
 
-footer{
+footer {
     text-align: center;
-    font-size:15px;
+    font-size: 15px;
     font-variant: small-caps;
-    padding-top:10em;
+    padding-top: 10em;
 }
-
-
-
-
